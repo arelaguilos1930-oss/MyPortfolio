@@ -62,3 +62,51 @@ body{
 
 
  }
+ /* Toggle button */
+#theme-toggle {
+    position: absolute;
+    top: 22px;
+    right: 70px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(213, 235, 242, 0.25);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+#theme-toggle:hover {
+    background-color: darkslategray;
+}
+
+/* Light theme */
+body.light {
+    background: linear-gradient(rgb(240, 247, 252) 50%, rgb(190, 205, 235));
+}
+
+body.light * {
+    color: #111;
+}
+
+body.light .content {
+    background-color: rgb(250, 252, 255);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.light .boutme {
+    border-color: #999;
+}
+
+body.light .boutme p[style] {
+    color: #555 !important;
+}
+
+body.light .nav a:hover,
+body.light footer a:hover,
+body.light #theme-toggle:hover {
+    background-color: rgba(120, 160, 200, 0.4);
+}
+
+body.light #theme-toggle {
+    background-color: rgba(120, 160, 200, 0.25);
+}
